@@ -17,27 +17,37 @@ var app = express();
 // RUN SERVER 
 //////////////////////////////////////////
 
-//1.1 Create the server 
-var server = http.createServer(function (req, res) {
+//1.0 Server Config
+
+app.get("/", function (req, res) {
     
-    var body = req.url;
+    var body = "Express";
     var html = "<html><body><h1>" + body + "</h1></body></html>";
 
-    console.log(req.url);
-    res.write(html);
-    res.end();
+    res.send(html);
 });
+
+
+app.get("/api/users", function (req, res) {
+    
+    
+    var obj = {
+        name: "Franck",
+        isValid: true, 
+        group: "Admin"
+    };
+    
+    res.set("Content-Type", "application/json")
+    res.send(obj);
+});
+
+
+
+
+//1.1 Create the server 
+
+var server = http.createServer(app);
 
 //1.2 Listen to the Server
 
 server.listen(3000);
-
-//C:\LEARN-Code\MukeApps\MukeApps\MukeApps --> right click npm 
-
-/* var http = require('http');
-var port = process.env.port || 1337;
-http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello World\n');
-}).listen(port);
- */
