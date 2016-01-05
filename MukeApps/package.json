@@ -1,0 +1,10 @@
+{
+  "name": "MukeApps",
+  "version": "0.0.0",
+  "description": "MukeApps",
+  "main": "server.js",
+  "author": {
+    "name": "fmuke",
+    "email": ""
+  }
+}
