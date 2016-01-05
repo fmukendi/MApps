@@ -6,6 +6,12 @@
 //1.1 we need http module to create a server. Http is standard Node.js Library.
 var http = require('http');
 
+//1.2 express is a web application framework like webforms  or  asp.net mvc
+var express = require('express');
+
+//1.3 work pretty much like classes
+var app = express();
+
 
 ///////////////////////////////////////////
 // RUN SERVER 
@@ -26,6 +32,7 @@ var server = http.createServer(function (req, res) {
 
 server.listen(3000);
 
+//C:\LEARN-Code\MukeApps\MukeApps\MukeApps --> right click npm 
 
 /* var http = require('http');
 var port = process.env.port || 1337;

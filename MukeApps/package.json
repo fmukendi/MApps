@@ -6,5 +6,9 @@
   "author": {
     "name": "Franck Mukendi",
     "email": ""
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "underscore": "^1.8.3"
   }
 }
