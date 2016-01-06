@@ -32,6 +32,7 @@
   <ItemGroup>
     <Compile Include="server.js" />
     <Content Include="views\index.vash" />
+    <Content Include="views\layout.vash" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config" />
     <Content Include="bin\ChangeConfig.ps1" />
