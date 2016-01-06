@@ -28,7 +28,6 @@ app.set("view engine", "vash");// expect a folder call views
 app.use(express.static(__dirname + "/public"));// so that layout.vash can do link href="/css/site.css"
 
 
-
 ///////////////////////////////////////////
 // PART III RUN SERVER 
 //////////////////////////////////////////
