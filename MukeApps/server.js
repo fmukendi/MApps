@@ -12,19 +12,20 @@ var express = require('express');
 //1.3 work pretty much like classes
 var app = express();
 
+//1.4 set the view engine
+
+app.set("view engine", "vash");// expect a folder call views 
+
 
 ///////////////////////////////////////////
 // RUN SERVER 
 //////////////////////////////////////////
 
-//1.0 Server Config
+//1.1 Server Config
 
 app.get("/", function (req, res) {
     
-    var body = "Express";
-    var html = "<html><body><h1>" + body + "</h1></body></html>";
-
-    res.send(html);
+    res.render("index", { title : "Express + Vash" });
 });
 
 
@@ -44,10 +45,10 @@ app.get("/api/users", function (req, res) {
 
 
 
-//1.1 Create the server 
+//1.2 Create the server 
 
 var server = http.createServer(app);
 
-//1.2 Listen to the Server
+//1.3 Listen to the Server
 
 server.listen(3000);
