@@ -29,7 +29,6 @@ app.use(express.static(__dirname + "/public"));// so that layout.vash can do lin
 
 
 
-
 ///////////////////////////////////////////
 // PART III RUN SERVER 
 //////////////////////////////////////////
