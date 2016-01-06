@@ -35,12 +35,8 @@ app.set("view engine", "vash");// expect a folder call views
 // PART III RUN SERVER 
 //////////////////////////////////////////
 
-//1.1 Server Config
-
-app.get("/", function (req, res) {
-    
-    res.render("index", { title : "Express + Vash" });
-});
+//1.1 Initiate the application
+controllers.init(app);
 
 //1.2 Create the server 
 
