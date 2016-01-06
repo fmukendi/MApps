@@ -22,11 +22,10 @@ var controllers = require('./controllers'); // work like classes and will inglob
 ///////////////////////////////////
 
 //1.1 set the view engine
-
 app.set("view engine", "vash");// expect a folder call views 
 
-
-
+//1.2 set the public static resource folder
+app.use(express.static(__dirname + "/public"));// so that layout.vash can do link href="/css/site.css"
 
 
 
