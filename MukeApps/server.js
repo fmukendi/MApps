@@ -41,4 +41,4 @@ var server = http.createServer(app);
 
 //1.3 Listen to the Server
 
-server.listen(3000);
+server.listen(3000);//http://localhost:3000/
