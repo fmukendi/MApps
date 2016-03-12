@@ -18,7 +18,7 @@ var controllers = require('./controllers'); // work like classes and will inglob
 
 
 ////////////////////////////////////
-// PART II - CONFIGURATION
+// PART II - CONFIGURATION  ////////
 ///////////////////////////////////
 
 //1.1 set the view engine
